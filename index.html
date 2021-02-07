@@ -1,0 +1,23 @@
+<main class="w-50 mx-auto">
+	<form class="bg-light border rounded mx-auto mt-5 p-3">
+		<h1 class="h2 text-center mt-2 mb-4">Homework 3 - Input Form</h1>
+		<div class="form-group">
+			<label for="name">Name</label>
+			<input type="text" class="form-control" id="name" />
+		</div>
+		<div class="form-group">
+			<label for="email">Email</label>
+			<input type="email" class="form-control" id="email" />
+		</div>
+		<div class="form-group">
+			<label for="comments">Message</label>
+			<textarea class="form-control" id="comments" rows="3"></textarea>
+		</div>
+		<button class="btn btn-block btn-inverse" id="startbutton" onclick="startSpeechRecognition(event)">Start Listening</button>
+		<button class="btn btn-block btn-inverse" id="stopbutton" onclick="stopSpeechRecognition(event)">Stop Listening</button>
+		<button class="btn btn-block btn-inverse" id="clearbutton" onclick="clearSpeech(event)">Clear</button>
+		<div class="form-group mt-4">
+			<input type="submit" class="btn btn-primary btn-block" value="Submit" />
+		</div>
+	</form>
+</main>
